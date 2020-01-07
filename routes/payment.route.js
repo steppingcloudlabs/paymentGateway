@@ -1,7 +1,7 @@
 const router = require("express-promise-router")();
-const PaymentController = require("../controller/payment.controller");
+const PaymentController = require("../controller/payment.controller")();
 router
-  .route("/payment")
-  .post((req, res, next) => PaymentController.payment(req, res, next));
+  .route("/test")
+  .post((req, res, next) => PaymentController.test(req, res, next));
 
 module.exports = router;
